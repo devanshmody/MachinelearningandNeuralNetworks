@@ -177,7 +177,7 @@ def main():
   #we check for best value in our list and find its index position
   #these are the values in my list when i did cross validation for my k values 
   #[97.1576227390181,97.41602067183463,96.64082687338501,96.64082687338501,98.19121447028424,95.8656330749354,95.60723514211887,96.38242894056847,97.41602067183463,96.12403100775194,94.57364341085271]
-  diff_function = lambda list_value : abs(val - sum(val)/len(val))
+  difference_function = lambda list_value : abs(val - sum(val)/len(val))
   closest_value = min(val, key=difference_function)
   print("closest_value",closest_value)
   #i get closest_value this is 96.64082687338501
